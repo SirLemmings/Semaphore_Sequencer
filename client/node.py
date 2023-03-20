@@ -5,7 +5,6 @@ import blocks_identity as bk
 from wrappers import Index, Pubkey
 import gui
 import time
-import timing as tm
 
 current_time = -1
 open_queries = {}
