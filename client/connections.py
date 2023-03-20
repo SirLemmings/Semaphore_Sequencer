@@ -163,8 +163,6 @@ def socket_events() -> None:
 def commands() -> None:
     """Handle user input. Runs in a separate thread"""
     while True:
-        if cfg.bot:
-            break
         message = input(f"> ")
         if message:
             if message == "mint":  # request a new alias
