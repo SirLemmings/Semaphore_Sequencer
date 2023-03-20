@@ -177,8 +177,6 @@ def process_block(new_block: sb.SemaphoreBlock, serialized_block, index: Index) 
     cfg.db.archive.put(timestamp, archive)
     if cfg.show_messages or True:
         print("+", bytes(checkpoint)[:5].hex(), int.from_bytes(timestamp, "big"))
-    if not nd.syncing:
-        print('len:',len(processed_aliases)/pm.ALIAS_LENGTH)
 
 
 def receive_new_block(serialized_block: bytes) -> bool:
