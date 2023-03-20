@@ -1,5 +1,8 @@
 import sys
 import os
+current_file = os.path.abspath(__file__)
+parent_directory = os.path.dirname(os.path.dirname(current_file))
+sys.path.append(parent_directory)
 import params as pm
 import database as db
 import hashing as hs
@@ -7,11 +10,6 @@ import ecdsa
 import socket
 import os
 from wrappers import Alias
-
-current_file = os.path.abspath(__file__)
-parent_directory = os.path.dirname(os.path.dirname(current_file))
-sys.path.append(parent_directory)
-bot = True
 
 def get_next_node_number():
     # Set the base directory where the node directories will be created
