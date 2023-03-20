@@ -1,5 +1,7 @@
 Welcome to the prototype implementation of the Semaphore sequencer and client
 
+Requires Python3.10 environment with plyvel and ecdsa installed
+
 To run the sequencer, run sequencer/node.py
 To run the client, run sequencer/node.py
 
