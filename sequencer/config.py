@@ -1,13 +1,12 @@
 import sys
 import os
+current_file = os.path.abspath(__file__)
+parent_directory = os.path.dirname(os.path.dirname(current_file))
+sys.path.append(parent_directory)
 import database as db
 import ecdsa
 import socket
 import params as pm
-
-current_file = os.path.abspath(__file__)
-parent_directory = os.path.dirname(os.path.dirname(current_file))
-sys.path.append(parent_directory)
 
 if pm.SEQUENCER_IP =="":
     IP = socket.gethostbyname("localhost")
