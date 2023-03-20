@@ -1,6 +1,9 @@
 Welcome to the prototype implementation of the Semaphore sequencer and client
 
-Requires Python3.10 environment with plyvel and ecdsa installed
+Requires Python3.10 environment with plyvel, ecdsa, and PyQt5 installed
+Pip has trouble installing plyvel, so a conda environment is recommented
+If you do not already have anaconda installed, you can download miniconda here: https://docs.conda.io/en/latest/miniconda.html
+You can build the conda environment by running 'conda env create -f environment.yml' or by following the instructions in requirements.txt
 
 To run the sequencer, run sequencer/node.py
 To run the client, run sequencer/node.py
